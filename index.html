@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WellBe</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+   />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header id="home">
+        <div class="mainheader">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+
+            <nav>
+                <a href="#">home</a>
+                <a href="#">services</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+            </nav>
+
+            <div class="call">
+                <span>call us :</span>
+                <a href="#">+91-98-11-40-11-80</a>
+            </div>
+        </div>
+
+        <main>
+            <div class="left-sec">
+                <h2>Your health is our priority!</h2>
+                <h1>Better care for better living</h1>
+                <p>We are here for your care 24/7. Any help just call us.</p>
+                <a href="#appointment" class="left-side-btn">Make an appointment</a>
+            </div>
+
+            <div class="right-sec">
+                    <img class="a" src="images/mainbg.jpg">
+            </div>
+        </main>
+    </header>
+    <div class="box">
+        <h3>Our Doctors</h3>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/1.jpeg" alt=""></div>
+          <div class="swiper-slide"><img src="images/2.jpeg" alt=""></div>
+          <div class="swiper-slide"><img src="images/3.png" alt=""></div>
+          <div class="swiper-slide"><img src="images/4.jpeg" alt=""></div>
+          <div class="swiper-slide"><img src="images/5.png" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>  
+<div class="box1">
+    <h3>Our Services </h3>
+</div>
+        <div class="form-box">
+        <div class="form-box1">
+            <h2>Appointment Here</h2>
+            <form>
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label>Gender</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label>Age</label>
+                    <input type="number">
+                </div>
+                <div class="input-group">
+                    <label>Diseases</label>
+                    <input type="text">
+                </div>
+                <button type="submit">Submit &#10132;</button>
+
+            </form>
+            <p>Login in with social media account</p>
+            <div class="social">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>   
+            </div>
+        </div>
+
+        <div class="form-box2">
+
+            <h2>Login Here</h2>
+            <form>
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password">
+                </div>
+                <a href="" class="forgot" style="text-decoration: none;">forgot password?</a>
+                <div>
+                <button class="submit" type="submit">Submit &#10132;</button>
+                </div>
+            </form>
+            <p>Login in with social media account</p>
+            <div class="social">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+
+     <!-- footer section starts  -->
+
+     <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>WellBe is designed for everyone to have a
+                    stay-at-home doctor,who could easily assisst you with
+                    common diseases that we contract with in our daily life.
+                    
+                    Along with this,in more complicated cases,a second
+                    follow up consultation can be scheduled.You can contact
+                    us or book an appointment through Wellbe.For this, You
+                    need to visit the doctor personally.
+                    
+                    Our team will try their best to provide friendly
+                    ,personalised care to all members of your family.
+                    
+                    We also preserve the medical records of person.You can
+                    access it by logging into your account</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linked</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Contact Us</h1>
+
+        <div class="row">
+
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.895920873054!2d72.83196972644954!3d19.141670564195152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1621609263469!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy"></iframe>
+
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" required>
+                    <label>name: </label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" required>
+                    <label>email: </label>
+                </div>
+                <div class="inputBox">
+                    <input type="tel" required>
+                    <label>number: </label>
+                </div>
+                <div class="inputBox">
+                    <textarea required name="" id="" cols="30" rows="10"></textarea>
+                    <label>message: </label>
+                </div>
+
+                <input type="submit" value="send message" class="btn">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+    <a href="#home" class="scroll-top fas fa-angle-up"></a>
+    <h1 class="credit"> Created by <span> Akshay Pawar </span> | all rights reserved! </h1>
+</body>
+
+</html>
