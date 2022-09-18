@@ -126,7 +126,7 @@ main {
   background-image: linear-gradient(to right, #649bff, #0070fa, #649bff);
   border-radius: 10px;
 }
-.box1{
+#services{
   color: #333;
   font-size: 2rem;
   padding: 2rem 0;
@@ -249,36 +249,36 @@ button:hover
   }
   
 }
-.footer .box-container {
+#footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
  
-.footer .box-container .box {
+#footer .box-container .box {
   flex: 1 1 25rem;
 }
 
-.footer .box-container .box h3 {
+#footer .box-container .box h3 {
   color: #333;
   font-size: 2rem;
   padding: 1rem 0;
 }
 
-.footer .box-container .box p {
+#footer .box-container .box p {
   color: #666;
   font-size: 1.2rem;
   padding: 1rem 0;
 }
 
-.footer .box-container .box a {
+#footer .box-container .box a {
   display: block;
   color: #666;
   font-size: 1.3rem;
   padding: 1rem 0;
 }
 
-.footer .box-container .box a:hover {
+#footer .box-container .box a:hover {
   text-decoration: underline;
   color: black;
 }
@@ -343,37 +343,21 @@ button:hover
   width: 100%;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
   padding: 1rem 0;
-  margin: 1.5rem 0;
-  font-size: 1.7rem;
+  margin: 0.8rem 0;
+  font-size: 1.2rem;
+  text-align:center;
   color: #333;
 }
-
 .contact .row form .inputBox textarea {
   resize: none;
   border-radius: 10px;
   height: 15rem;
 }
-
 .contact .row form .inputBox input:focus,
 .contact .row form .inputBox textarea:focus {
   border-color: black;
 }
 
-.contact .row form .inputBox label {
-  position: absolute;
-  top: 2.3rem;
-  left: 10px;
-  font-size: 1.2rem;
-}
-
-.contact .row form .inputBox input:focus ~ label,
-.contact .row form .inputBox textarea:focus ~ label,
-.contact .row form .inputBox input:valid ~ label,
-.contact .row form .inputBox textarea:valid ~ label {
-  top: -0.1rem;
-  font-size: 1.5rem;
-  color: #666;
-}
 .btn{
   padding: 10px 18px;
   border: none;
@@ -417,4 +401,9 @@ button:hover
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
