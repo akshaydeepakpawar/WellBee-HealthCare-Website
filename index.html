@@ -25,9 +25,9 @@
 
             <nav>
                 <a href="#">home</a>
-                <a href="#">services</a>
-                <a href="#">about</a>
-                <a href="#">contact</a>
+                <a href="#services">services</a>
+                <a href="#footer">about</a>
+                <a href="#contact">contact</a>
             </nav>
 
             <div class="call">
@@ -59,7 +59,7 @@
           <div class="swiper-slide"><img src="images/2.jpeg" alt=""></div>
           <div class="swiper-slide"><img src="images/3.png" alt=""></div>
           <div class="swiper-slide"><img src="images/4.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="images/5.png" alt=""></div>
+          
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -87,41 +87,84 @@
       },
     });
   </script>  
-<div class="box1">
+<div id="services">
     <h3>Our Services </h3>
 </div>
+ <!-- Swiper -->
+ <div class="swiper sSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      <img src="images/s1.gif" alt="">
+        <div class="bottom-left">Cost-effectiveness analysis (CEA) in cardiac surgery continues to grow in relevance with increasing health care expenditures, a greater emphasis on value-based care, the continuing development of costly surgical and noninvasive technologies, advances in cardiac devices, and changes in eligibility criteria over the past two decades.</div></div>
+      <div class="swiper-slide"><img src="images/s2.gif" alt="">
+        <div class="bottom-left">Everyone should go for whole body checkup at least once in a year to know about their health and if they are suffering from any abnormality or diseases. It can also give you an alert for unhealthy habits & can motivate you to follow a healthy lifestyle.
+
+</div>
+    </div>
+      <!-- <div class="swiper-slide"><img src="images/s4.gif" alt=""></div>  -->
+      <!-- <div class="swiper-slide"><img src="images/4.jpeg" alt=""></div> -->
+      
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script>
+    var swiper = new Swiper(".sSwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>  
+
+  <!-- Swiper JS -->
+  <div id="services">
+    <h3 id="appointment">Appointment</h3>
+</div>
+<form  action="https://formspree.io/f/mnqrpokl"
+method="POST">
         <div class="form-box">
         <div class="form-box1">
             <h2>Appointment Here</h2>
             <form>
                 <div class="input-group">
                     <label>Full Name</label>
-                    <input type="text">
+                    <input type="text" name="Name">
                 </div>
                 <div class="input-group">
                     <label>Gender</label>
-                    <input type="text">
+                    <input type="text" name="Gender">
                 </div>
                 <div class="input-group">
                     <label>Age</label>
-                    <input type="number">
+                    <input type="number" name="Age">
                 </div>
                 <div class="input-group">
-                    <label>Diseases</label>
-                    <input type="text">
+                    <label>Symptoms</label>
+                    <input type="text" name="Symptoms">
                 </div>
                 <button type="submit">Submit &#10132;</button>
 
             </form>
             <p>Login in with social media account</p>
             <div class="social">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>   
+                <a href="https://twitter.com/akshay_ppvvtt" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/akshay.ppvvtt/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/akshay-pawar-5b4b5819a/" class="fab fa-linkedin"></a>   
             </div>
         </div>
-
+    </form>
         <div class="form-box2">
 
             <h2>Login Here</h2>
@@ -141,17 +184,16 @@
             </form>
             <p>Login in with social media account</p>
             <div class="social">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
+                <a href="https://twitter.com/akshay_ppvvtt" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/akshay.ppvvtt/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/akshay-pawar-5b4b5819a/" class="fab fa-linkedin"></a>
             </div>
         </div>
     </div>
 
      <!-- footer section starts  -->
 
-     <section class="footer">
+     <section id="footer">
 
         <div class="box-container">
 
@@ -181,10 +223,9 @@
             </div>
             <div class="box">
                 <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">instagram</a>
-                <a href="#">linked</a>
+                <a href="https://twitter.com/akshay_ppvvtt">twitter</a>
+                <a href="https://www.instagram.com/akshay.ppvvtt/">instagram</a>
+                <a href="https://www.linkedin.com/in/akshay-pawar-5b4b5819a/">linked</a>
             </div>
 
         </div>
@@ -196,28 +237,23 @@
         <h1 class="heading">Contact Us</h1>
 
         <div class="row">
-
             <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.895920873054!2d72.83196972644954!3d19.141670564195152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1621609263469!5m2!1sen!2sin"
-                allowfullscreen="" loading="lazy"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15080.40778549046!2d73.00202922914853!3d19.103183069263714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0da9e93097f%3A0xd54c1cc7981cf314!2sKopar%20Khairane%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1663526068651!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy"></iframe>
+            <form action="https://formspree.io/f/mnqrpokl"
+            method="POST">
 
-            <form action="">
-
                 <div class="inputBox">
-                    <input type="text" required>
-                    <label>name: </label>
+                    <input type="text" name="name" placeholder="Name" required>
                 </div>
                 <div class="inputBox">
-                    <input type="email" required>
-                    <label>email: </label>
+                    <input type="email" name="g-mail" placeholder="G-mail" required>
                 </div>
                 <div class="inputBox">
-                    <input type="tel" required>
-                    <label>number: </label>
+                    <input type="text" name="subject" placeholder="Subject" required>
                 </div>
                 <div class="inputBox">
-                    <textarea required name="" id="" cols="30" rows="10"></textarea>
-                    <label>message: </label>
+                    <textarea required name="message" id="" cols="30" rows="10" placeholder="Enter your message here !" ></textarea>
                 </div>
 
                 <input type="submit" value="send message" class="btn">
